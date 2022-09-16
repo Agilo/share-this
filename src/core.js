@@ -61,7 +61,9 @@ export default (opts) => {
                 stylePopover(popover, getConstrainedRange(), options);
             }
             return !!popover;
-        }
+        },
+        drawPopover,
+        killPopover,
     };
 
     function addListener(type) { _document.addEventListener(type, selectionCheck); }

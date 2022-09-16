@@ -92,6 +92,14 @@ export interface ShareThisInstance {
      * @returns {boolean} `true` if there's a popover currently on screen
      */
     reposition(): boolean;
+    /**
+     * Opens popover above given range.
+     */
+    drawPopover(range: Range): void;
+    /**
+     * Closes active popover.
+     */
+    killPopover(): void;
 }
 
 /**
