@@ -62,7 +62,9 @@ export default (opts) => {
             }
             return !!popover;
         },
-        drawPopover,
+        drawPopover(range) {
+            drawPopover(constrainRange(range, options.selector));
+        },
         killPopover,
     };
 
